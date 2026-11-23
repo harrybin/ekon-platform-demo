@@ -22,7 +22,7 @@ jobs:
         build-mode: [debug, release]
     uses: ./.github/workflows/reusable-build.yml
     with:
-      build-mode: ${{ matrix.build-mode }}
+      build-mode: ${{ matrix['build-mode'] }}
 
   package:
     if: github.ref == 'refs/heads/main'
