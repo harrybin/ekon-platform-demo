@@ -1,0 +1,17 @@
+name: Feature
+description: Neue fachliche Funktion
+labels: ["feature"]
+body:
+  - type: textarea
+    id: ziel
+    attributes:
+      label: Ziel
+    validations:
+      required: true
+  - type: textarea
+    id: akzeptanz
+    attributes:
+      label: Akzeptanzkriterien
+      description: Als pruefbare Liste, damit auch ein Agent sie testen kann
+    validations:
+      required: true

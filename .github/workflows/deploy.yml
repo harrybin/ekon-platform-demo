@@ -1,0 +1,25 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dev:
+    runs-on: ubuntu-latest
+    environment:
+      name: dev
+      url: https://example.com/dev
+    steps:
+      - run: echo "Deploy nach DEV (Demo) – Commit ${{ github.sha }}"
+
+  prod:
+    needs: dev
+    runs-on: ubuntu-latest
+    environment:
+      name: prod
+      url: https://example.com/prod
+    steps:
+      - run: echo "Deploy nach PROD (Demo) – freigegeben durch Required Reviewer"

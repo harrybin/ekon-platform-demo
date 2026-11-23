@@ -1,0 +1,5 @@
+# Absichtlich veraltete Versionen, damit Dependabot Alerts erzeugt
+Flask==2.0.1
+Jinja2==2.11.2
+requests==2.25.0
+Werkzeug==2.0.1

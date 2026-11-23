@@ -1,0 +1,6 @@
+/out/
+__pycache__/
+*.py[cod]
+/tools/report_service/invoices.db
+/Anleitung Demo-Repository EKON 2026.docx
+/Nur ein paar Repositories - GitHub als KI- und Delivery-Plattform.pptx
