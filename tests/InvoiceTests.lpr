@@ -20,7 +20,7 @@ begin
   L.Description := 'Lizenz';
   L.Quantity := 3;
   L.UnitPrice := 19.99;
-  AssertEquals(59.97, Double(LineTotal(L)), 0.001);
+  AssertTrue(LineTotal(L) = 59.97);
 end;
 
 procedure TInvoiceTest.InvoiceNetSumsLines;
@@ -30,12 +30,12 @@ begin
   SetLength(Lines, 2);
   Lines[0].Quantity := 1; Lines[0].UnitPrice := 100;
   Lines[1].Quantity := 2; Lines[1].UnitPrice := 25;
-  AssertEquals(150.0, Double(InvoiceNet(Lines)), 0.001);
+  AssertTrue(InvoiceNet(Lines) = 150.0);
 end;
 
 procedure TInvoiceTest.VatIsRounded;
 begin
-  AssertEquals(19.0, Double(VatAmount(100, 19)), 0.001);
+  AssertTrue(VatAmount(100, 19) = 19.0);
 end;
 
 var

@@ -9,7 +9,7 @@ Demo-Repository zum Vortrag „Nur ein paar Repositories? Wie GitHub vom Code-Ar
 3. **Security:** absichtlich verwundbarer Flask-Endpunkt in `tools/report_service/` und veraltete Abhängigkeiten für CodeQL und Dependabot.
 4. **Copilot und Agents:** Repository-Anweisungen, Pascal-spezifische Anweisungen, Prompt-Datei, Custom Agent und Copilot-Setup-Workflow.
 
-Die vollständige Einrichtung und die erforderlichen manuellen GitHub-Schritte stehen in der lokalen Datei `Anleitung Demo-Repository EKON 2026.docx`. GitHub-Projektboards sowie Copilot- und Environment-Freigaben müssen in den Repository-Einstellungen ergänzt werden.
+Die vollständige Einrichtung und die erforderlichen manuellen GitHub-Schritte stehen in der begleitenden Demo-Anleitung. GitHub-Projektboards sowie Copilot- und Environment-Freigaben müssen in den Repository-Einstellungen ergänzt werden.
 
 ## Lokal bauen und testen
 
