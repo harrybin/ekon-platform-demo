@@ -36,7 +36,7 @@ end;
 
 function RoundCommercial(const AValue: Currency): Currency;
 begin
-  // Kaufmaennisch auf 2 Nachkommastellen runden
+  // Kaufmaennisch auf 2 Nachkommastellen runden (Rundungsregel DIN 1333)
   Result := Trunc(AValue * 100 + 0.5) / 100;
 end;
 
